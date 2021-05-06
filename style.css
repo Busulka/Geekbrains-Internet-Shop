@@ -67,6 +67,16 @@ body {
   .right__person {
     margin-right: 33px;
   }
+  .right__burger:hover {
+    display: block;
+    width: 232px;
+    height: 764px; 
+    background-color: #F8F8F8;
+  }
+  .burger__bar {
+    display:none;
+  }
+
   .main {
     width: 100%;
   }
@@ -195,6 +205,8 @@ body {
     margin-bottom: 30px;
     text-align: left;
   }
+
+  }
   .item__text {
     margin: 18px 25px 18px 20px;
   }
@@ -216,6 +228,7 @@ body {
   }
   .featured__button {
     font-size: 16px;
+    text-decoration: none;
     line-height: 19px;
     color: #F26376;
     text-align: center;

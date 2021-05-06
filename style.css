@@ -84,6 +84,7 @@ body {
     width: 232px;
     height: 764px; 
     background-color: #F8F8F8;
+    box-shadow:-10px 10px 21px 6px rgba(0,0,0,0.11);
   }
   .right__burger:hover + .burger__side {
     display: block;

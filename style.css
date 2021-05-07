@@ -15,8 +15,7 @@ body {
          url('fonts/lato-v17-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
          url('fonts/lato-v17-latin-regular.svg#Lato') format('svg'); /* Legacy iOS */
   }
-  
-  /* lato-700 - latin */
+   /* lato-700 - latin */
   @font-face {
     font-family: 'Lato';
     font-style: normal;
@@ -43,8 +42,7 @@ body {
          url('/fonts/lato-v17-latin-900.ttf') format('truetype'), /* Safari, Android, iOS */
          url('/fonts/lato-v17-latin-900.svg#Lato') format('svg'); /* Legacy iOS */
   }
-  
-  .header {
+    .header {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -451,7 +449,6 @@ body {
   .icon {
     margin-right: 8px;
   }
-
   .new-arrivals {
     display: flex;
     justify-content: space-around;
@@ -466,7 +463,6 @@ body {
     font-size: 24px;
     line-height: 29px;
   }
-
   .site-nav__menu {
     text-decoration: none;
     font-weight: 300;

@@ -22,11 +22,11 @@ body {
     font-weight: 700;
     src: url('fonts/lato-v17-latin-700.eot'); /* IE9 Compat Modes */
     src: local(''),
-         url('/fonts/lato-v17-latin-700.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-         url('/fonts/lato-v17-latin-700.woff2') format('woff2'), /* Super Modern Browsers */
-         url('/fonts/lato-v17-latin-700.woff') format('woff'), /* Modern Browsers */
-         url('/fonts/lato-v17-latin-700.ttf') format('truetype'), /* Safari, Android, iOS */
-         url('/fonts/lato-v17-latin-700.svg#Lato') format('svg'); /* Legacy iOS */
+         url('fonts/lato-v17-latin-700.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('fonts/lato-v17-latin-700.woff2') format('woff2'), /* Super Modern Browsers */
+         url('fonts/lato-v17-latin-700.woff') format('woff'), /* Modern Browsers */
+         url('fonts/lato-v17-latin-700.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('fonts/lato-v17-latin-700.svg#Lato') format('svg'); /* Legacy iOS */
   }
   
   /* lato-900 - latin */
@@ -34,13 +34,13 @@ body {
     font-family: 'Lato';
     font-style: normal;
     font-weight: 900;
-    src: url('/fonts/lato-v17-latin-900.eot'); /* IE9 Compat Modes */
+    src: url('fonts/lato-v17-latin-900.eot'); /* IE9 Compat Modes */
     src: local(''),
-         url('/fonts/lato-v17-latin-900.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-         url('/fonts/lato-v17-latin-900.woff2') format('woff2'), /* Super Modern Browsers */
-         url('/fonts/lato-v17-latin-900.woff') format('woff'), /* Modern Browsers */
-         url('/fonts/lato-v17-latin-900.ttf') format('truetype'), /* Safari, Android, iOS */
-         url('/fonts/lato-v17-latin-900.svg#Lato') format('svg'); /* Legacy iOS */
+         url('fonts/lato-v17-latin-900.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('fonts/lato-v17-latin-900.woff2') format('woff2'), /* Super Modern Browsers */
+         url('fonts/lato-v17-latin-900.woff') format('woff'), /* Modern Browsers */
+         url('fonts/lato-v17-latin-900.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('fonts/lato-v17-latin-900.svg#Lato') format('svg'); /* Legacy iOS */
   }
     .header {
     display: flex;
@@ -254,6 +254,7 @@ body {
   }
   .item__image {
     position: relative;
+    z-index: 9;
   }
   .featured__item-hover {
     display: none;
@@ -341,6 +342,7 @@ body {
     background-repeat: no-repeat;
     background-size: 100%;
     background-position: bottom;
+    background-size: cover;
   }
   .subscribe__content {
     display: flex;
@@ -475,12 +477,70 @@ body {
   }
   .catalog-menu {
     display: flex;
+    position: relative;
     justify-content: space-around;
     align-items: center;
     height: 132px;
   }
+  .filter-heading {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+  }
   .catalog-menu__filter {
-    display:flex;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    left: 16px;
+    color: #6F6E6E;
+  }
+  .catalog-menu__heading {
+    display: flex;
+    padding-left: 10px;
+    font-size: 14px;
+    line-height: 17px;
+    color: #6F6E6E;
+  }
+  .filter__bar {
+    display:none;
+    position: absolute;
+    top: 66px;
+    left: 17px;
+    z-index: 11;
+  }
+  .filter-list {
+    font-weight: 500;
+    padding: 10px;
+    margin: 24px 0 0 0;
+    border-left: 5px solid #F16D7F;
+    font-size: 14px;
+    line-height: 17px;
+    color: #EF5B70;
+  }
+  .filter-list__item {
+    list-style-type: none;
+    padding: 11px 0 0 34px;
+    font-size: 14px;
+    line-height: 17px;
+  }
+  .catalog-menu__filter:hover {
+    color:#F16D7F;
+    position: absolute;
+    top: 44px;
+    left: 0;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    background-color: #F8F8F8;
+    box-shadow: 10px 6px 27px 1px rgba(34, 60, 80, 0.2);
+    padding: 0 300px 531px 16px;
+    z-index: 10;
+  }
+  .catalog-menu__filter:hover + .filter__bar {
+    display: block;
+  }
+  .catalog-menu__filter:hover .filter__icon {   
+    fill: #F16D7F;
   }
   .catalog-menu__options {
     display: flex;
@@ -489,19 +549,59 @@ body {
     width: 100%;
   }
   .filter__icon {
-    padding-left: 11px;
+    padding: 11px;
   }
   .menu-arrow {
-    padding: 0 28px 0 10px;
+    padding: 5px 28px 0 10px;
   }
-
+  .catalog-menu__heading-size {
+    position: relative;
+  }
+  .catalog-menu__heading-size:hover .options__size {
+    display: block;
+  }
+  .options__size {
+    display: none;
+    position: absolute;
+    top: 33px;
+    left: 0px;
+    background-color: #F8F8F8;
+    box-shadow: 10px 6px 27px 1px rgb(34 60 80 / 20%);
+    padding: 0 0 0 16px;
+    z-index: 10;
+    width: 79px;
+  }
+  .size {
+    padding: 9px;
+    margin: 0;
+    font-size: 14px;
+    line-height: 16px;
+    color: #6F6E6E;
+  }
+  .size-option {
+    display: flex;
+  }
   .catalog__products {
     display: flex;
     flex-wrap:wrap;
     justify-content: space-between;
   }
-  .catalog__pages {
-    margin: 0 auto;
+  .pagination {
+    margin: 0 auto 97px auto;
     display: flex;
-    padding: 10px 0 96px 0;
+    width: 283px;
+    border: 1px solid #dcdcdc;
+    border-radius: 5px;
+    justify-content: center;
+  }
+  .pagination__pages {
+    text-decoration: none;
+    color: #b1a7a7;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
+    padding: 8px;
+  }
+  .pagination__pages:hover {
+    color:#F16D7F;
   }

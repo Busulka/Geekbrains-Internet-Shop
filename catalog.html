@@ -70,16 +70,72 @@
         </div>
         <div class="catalog-menu container">
             <div class="catalog-menu__filter">
-                <p>FILTER</p>
-                <img src="img/filter.svg" alt="filter" class="filter__icon">
+                <p class="filter-heading">FILTER</p>
+                <svg class="filter__icon" width="15" height="10" viewBox="0 0 15 10" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path class="filter__icon"
+                        d="M0.833333 10H4.16667C4.625 10 5 9.625 5 9.16667C5 8.70833 4.625 8.33333 4.16667 8.33333H0.833333C0.375 8.33333 0 8.70833 0 9.16667C0 9.625 0.375 10 0.833333 10ZM0 0.833333C0 1.29167 0.375 1.66667 0.833333 1.66667H14.1667C14.625 1.66667 15 1.29167 15 0.833333C15 0.375 14.625 0 14.1667 0H0.833333C0.375 0 0 0.375 0 0.833333ZM0.833333 5.83333H9.16667C9.625 5.83333 10 5.45833 10 5C10 4.54167 9.625 4.16667 9.16667 4.16667H0.833333C0.375 4.16667 0 4.54167 0 5C0 5.45833 0.375 5.83333 0.833333 5.83333Z"
+                        fill="black" />
+                </svg>
+            </div>
+            <div class="filter__bar">
+                <h4 class="filter-list">CATEGORY</h4>
+                <img src="img/filter-menu-line.svg" alt="line">
+                <li class="filter-list__item"><a class="menu-list__link" href="#">Accessories</a>
+                </li>
+                <li class="filter-list__item"><a class="menu-list__link" href="#">Bags</a></li>
+                <li class="filter-list__item"><a class="menu-list__link" href="#">Denim</a></li>
+                <li class="filter-list__item"><a class="menu-list__link" href="#">Hoodies &
+                        Sweatshirts</a></li>
+                <li class="filter-list__item"><a class="menu-list__link" href="#">Jackets &
+                        Coats</a></li>
+                <li class="filter-list__item"><a class="menu-list__link" href="#">Polos</a></li>
+                <li class="filter-list__item"><a class="menu-list__link" href="#">Shirts</a></li>
+                <li class="filter-list__item"><a class="menu-list__link" href="#">Shoes</a></li>
+                <li class="filter-list__item"><a class="menu-list__link" href="#">Sweaters &
+                        Knits</a></li>
+                <li class="filter-list__item"><a class="menu-list__link" href="#">T-Shirts</a>
+                </li>
+                <li class="filter-list__item"><a class="menu-list__link" href="#">Tanks</a></li>
+
+                <h4 class="filter-list">BRAND
+                </h4>
+                <img src="img/filter-menu-line.svg" alt="line">
+                <h4 class="filter-list">DESIGNER
+                </h4>
+                <img src="img/filter-menu-line.svg" alt="line">
             </div>
             <div class="catalog-menu__options">
-                <p>TRENDING NOW</p>
-                <img src="img/menu_arrow.svg" alt="arrow" class="menu-arrow">
-                <p>SIZE</p>
-                <img src="img/menu_arrow.svg" alt="arrow" class="menu-arrow">
-                <p>PRICE</p>
-                <img src="img/menu_arrow.svg" alt="arrow" class="menu-arrow">
+                <div class="catalog-menu__heading">
+                    <p class="catalog-menu__heading">TRENDING NOW</p>
+                    <img src="img/menu_arrow.svg" alt="arrow" class="menu-arrow">
+                </div>
+                <div class="catalog-menu__heading catalog-menu__heading-size">
+                    <p class="catalog-menu__heading">SIZE</p>
+                    <div class="options__size">
+                        <div class="size-option">
+                            <img src="img/tick-square.svg" alt="square">
+                            <p class="size">XS</p>
+                        </div>
+                        <div class="size-option">
+                            <img src="img/tick-square.svg" alt="square">
+                            <p class="size">S</p>
+                        </div>
+                        <div class="size-option">
+                            <img src="img/tick-square.svg" alt="square">
+                            <p class="size">M</p>
+                        </div>
+                        <div class="size-option">
+                            <img src="img/tick-square.svg" alt="square">
+                            <p class="size">L</p>
+                        </div>
+                    </div>
+                    <img src="img/menu_arrow.svg" alt="arrow" class="menu-arrow">
+                </div>
+                <div class="catalog-menu__heading">
+                    <p class="catalog-menu__heading">PRICE</p>
+                    <img src="img/menu_arrow.svg" alt="arrow" class="menu-arrow">
+                </div>
             </div>
         </div>
         <div class="catalog__products container">
@@ -156,7 +212,19 @@
             </div>
 
         </div>
-        <img src="img/pagination.svg" alt="pages" class="catalog__pages">
+        <div class="pagination">
+            <a class="pagination__pages" href="#"><img src="img/left_arrow.svg" alt="left-arrow"></a>
+            <a class="pagination__pages" href="#">1</a>
+            <a class="pagination__pages" href="#">2</a>
+            <a class="pagination__pages" href="#">3</a>
+            <a class="pagination__pages" href="#">4</a>
+            <a class="pagination__pages" href="#">5</a>
+            <a class="pagination__pages" href="#">6</a>
+            <a class="pagination__pages" href="#">...</a>
+            <a class="pagination__pages" href="#">20</a>
+            <a class="pagination__pages" href="#"><img src="img/right-arrow.svg" alt="right-arrow"></a>
+        </div>
+
 
         <div class="service">
             <div class="service__card">
@@ -203,7 +271,7 @@
                     <p class="subscribe__text">FOR OUR NEWLETTER AND PROMOTION</p>
                     <form class="subscribe__form" action="#">
                         <input class="sub_input" type="email" placeholder="Enter Your Email">
-                        <button class=" subscribe__button" type="submit">Subscribe</button>
+                        <input class=" subscribe__button" type="submit" value="Subscribe">
                     </form>
                 </div>
     </main>

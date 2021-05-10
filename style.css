@@ -248,6 +248,7 @@ body {
     flex-direction: column;
     margin-bottom: 30px;
     text-align: left;
+    text-decoration: none;
   }
   .featured__item:hover > .featured__item-hover {
     display: block;
@@ -604,4 +605,87 @@ body {
   }
   .pagination__pages:hover {
     color:#F16D7F;
+  }
+  .main__product {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    height: 777px;
+    background-color: #F7F7F7;  
+  }
+  .main__product-arrow {
+    display: flex;
+    padding: 8px;
+    Width: 12px;
+    Height: 22px;
+    background-color: rgba(42, 42, 42, 0.15);
+    align-items: center
+  }
+  .main__product-arrow:hover .main__product-arrow-icon {
+    fill:#F16D7F;
+  }
+  .main__product-picture {
+    align-self: flex-start;
+    z-index: 10;
+  }
+  .main__product-description {
+    margin: 0 auto;
+    position: relative;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: -60px;
+    background-color: #FFFFFF;
+    width: 1141px;
+    height:601px;
+    border: 1px solid #EAEAEA;
+    z-index: 11;
+    text-align:center;
+  }
+  .main__product-header{
+    margin: 64px 0 27px 0;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 17px;
+    color: #F16D7F;
+  }
+  .main__product-name{
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 22px;
+    color: #4D4D4D;
+  }
+  .main__product-description-text {
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    color: #5E5E5E;
+    width: 555px;
+    text-align:center;
+  }
+  .main__product-price {
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 29px;
+    color: #EF5B70;
+  }
+  .product__add-to-cart {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #FF6A6A;
+    width: 211px;
+    height: 47px;
+    margin: 188px 110px;
+    font-size: 14px;
+    line-height: 17px;
+    color: #F26376;
+  }
+  .product__add-to-card-icon{
+    fill: #F26376;
+  }
+  .product__add-to-cart-img {
+    padding-left: 23px;
   }

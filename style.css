@@ -260,6 +260,7 @@ body {
   .featured__item-hover {
     display: none;
     position:absolute;
+    z-index: 11;
     width: 360px;
     height: 420px;
     background: rgba(58, 56, 56, 0.86);

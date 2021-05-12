@@ -690,8 +690,15 @@ body {
     background: none;
     cursor: pointer;
   }
+  .product__add-to-cart:hover {
+    color: #fff;
+    background-color: #F16D7F;
+  }
   .product__add-to-card-icon{
     fill: #F26376;
+  }
+  .product__add-to-cart:hover .product__add-to-card-icon {
+    fill: #fff;
   }
   .product__add-to-cart-img {
     padding-left: 23px;

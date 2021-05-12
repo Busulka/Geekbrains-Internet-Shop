@@ -158,7 +158,7 @@ body {
     margin: 0;
     padding: 0 0 0 16px;
   }
-  .slogan__second-pink {
+  .slogan__style {
     color: #F16D7F;
   }
   .container {
@@ -456,7 +456,7 @@ body {
   .icon {
     margin-right: 8px;
   }
-  .new-arrivals {
+  .main__top {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -464,9 +464,9 @@ body {
     height: 148px;
     background: #F8F3F4;
   }
-  .new-arrivals__heading {
+  .main__heading {
     color: #F16D7F;
-    font-weight: 700;
+    font-weight: 400;
     font-size: 24px;
     line-height: 29px;
   }
@@ -706,4 +706,11 @@ body {
   }
   .product-page__featured {
     padding-bottom: 128px;
+  }
+  .shopping-cart__product-card {
+    display: flex;
+    width: 652px;
+    height: 306px;
+    background: #FFFFFF;
+    filter: drop-shadow(17px 19px 24px rgba(0, 0, 0, 0.13));
   }

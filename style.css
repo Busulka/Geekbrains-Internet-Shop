@@ -43,15 +43,17 @@ body {
          url('fonts/lato-v17-latin-900.svg#Lato') format('svg'); /* Legacy iOS */
   }
     .header {
+    background-color: #222222;
+
+  }
+  .navigation {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: #222222;
     height: 75px;
   }
   .left {
     display: flex;
-    margin-left: 231px;
   }
   .left__logo {
     margin-right: 41px;
@@ -60,7 +62,6 @@ body {
     position: relative;
     display: flex;
     align-items: center;
-    margin-right: 231px;
   }
   .right__burger,
   .right__person {
@@ -313,10 +314,12 @@ body {
     background-color: #F16D7F;
   }
   .service {
+    background-color: #222224;
+  }
+  .service__cards {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    background-color: #222224;
     height: 341px;
   }
   .service__card {
@@ -556,31 +559,29 @@ body {
   .menu-arrow {
     padding: 5px 28px 0 10px;
   }
-  .catalog-menu__heading-size {
+  .catalog-menu__heading-options {
     position: relative;
   }
-  .catalog-menu__heading-size:hover .options__size {
+  .catalog-menu__heading-options:hover .options {
     display: block;
   }
-  .options__size {
+  .options {
     display: none;
     position: absolute;
     top: 33px;
     left: 0px;
+    padding: 5px 30px 5px 10px;
     background: #FFFFFF;
     box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
     z-index: 10;
-    width: 79px;
   }
-  .size {
-    padding: 3px 9px;
+  .option {
+    padding: 4px;
     margin: 0;
     font-size: 14px;
     line-height: 16px;
     color: #6F6E6E;
-  }
-  .size-option {
-    display: flex;
+    white-space:nowrap;
   }
   .catalog__products {
     display: flex;

@@ -24,7 +24,7 @@
                 </div>
                 <aside class="burger__side">
                     <div class="burger__bar">
-                        <img class="burger__bar-close" src="img/cross.svg" alt="close">
+                        <img class="burger__bar-close cross" src="img/cross.svg" alt="close">
                         <div class="burger__bar-menu">
                             <p class="burger__bar-menu-header">MENU</p>
                             <ul class="menu-list">MAN
@@ -64,94 +64,125 @@
                 <h2 class="main__heading">SHOPPING CART</h2>
             </div>
         </div>
-        <div class="container">
-            <div class="shopping-cart">
-                <div class="shopping-cart__product-card">
-                    <img src="img/cart-product_1.png" alt="product">
-                    <div class="shopping-cart__product-description">
-                        <h4 class="product-description__name">MANGO PEOPLE T-SHIRT</h4>
-                        <p class="product-description">Price: <span class="slogan__style">$300</span></p>
-                        <p class="product-description">Color: Red</p>
-                        <p class="product-description">Size: Xl</p>
-                        <div class="product-description__quantity">
-                            <p class="product-description">Quantity:</p>
-                            <p class="quantity__number">2</p>
+        <div class="container shopping-cart__container">
+            <div class="shopping-cart__left">
+                <div class="shopping-cart">
+                    <div class="shopping-cart__product-card">
+                        <img src="img/cart-product_1.png" alt="product">
+                        <div class="shopping-cart__product-description">
+                            <h4 class="product-description__name">MANGO PEOPLE T-SHIRT</h4>
+                            <p class="product-description">Price: <span class="slogan__style">$300</span></p>
+                            <p class="product-description">Color: Red</p>
+                            <p class="product-description">Size: Xl</p>
+                            <div class="product-description__quantity">
+                                <p class="product-description">Quantity:</p>
+                                <p class="quantity__number">2</p>
+                            </div>
                         </div>
-                        <img src="img/cross.svg" alt="cross">
+                        <img class="shopping-cart__product-cross cross" src="img/cross.svg" alt="cross">
+                    </div>
+                    <div class="shopping-cart__product-card">
+                        <img src="img/cart-product_2.png" alt="product">
+                        <div class="shopping-cart__product-description">
+                            <h4 class="product-description__name">MANGO PEOPLE T-SHIRT</h4>
+                            <p class="product-description">Price: <span class="slogan__style">$300</span></p>
+                            <p class="product-description">Color: Red</p>
+                            <p class="product-description">Size: Xl</p>
+                            <div class="product-description__quantity">
+                                <p class="product-description">Quantity:</p>
+                                <p class="quantity__number">1</p>
+                            </div>
+                        </div>
+                        <img class="shopping-cart__product-cross cross" src="img/cross.svg" alt="cross">
                     </div>
                 </div>
-                <div class="shopping-cart__product-card">
-                    <img src="img/cart-product_2.png" alt="product">
-                    <div class="shopping-cart__product-description">
-                        <h4 class="product-description__name">MANGO PEOPLE T-SHIRT</h4>
-                        <p class="product-description">Price: <span class="slogan__style">$300</span></p>
-                        <p class="product-description">Color: Red</p>
-                        <p class="product-description">Size: Xl</p>
-                        <div class="product-description__quantity">
-                            <p class="product-description">Quantity:</p>
-                            <p class="quantity__number">2</p>
-                        </div>
-                        <img src="img/cross.svg" alt="cross">
-                    </div>
-                </div>
-
-
-                <div class="cart-menu">
-
+                <div class="shopping-cart__buttons">
+                    <button class="shopping-cart__button">CLEAR SHOPPING CART</button>
+                    <a href="catalog.html" class="shopping-cart__button">CONTINUE SHOPPING</a>
                 </div>
             </div>
-            <div class="service">
-                <div class="container service__cards">
-                    <div class="service__card">
-                        <div class="service__delivery">
-                            <div class="service__delivery-logo"><img src="img/delivery.svg" alt="delivery">
-                            </div>
-                            <h5 class="service__name">Delivery</h5>
-                            <p class="service__text">Worldwide delivery on all. Authorit tively morph next-generation
-                                innov
-                                tion with extensive models.</p>
+            <div class="shopping-cart__right">
+                <div class="shopping-cart__address">
+                    <form class="address-form">
+                        <h4 class="address-form__heading">SHIPPING ADDRESS</h4>
+                        <input class="address-input" type="text" placeholder="Bangladesh"><br>
+                        <input class="address-input" type="text" placeholder="State"><br>
+                        <input class="address-input" type="text" placeholder="Postcode / Zip"><br>
+                        <button class="shopping-cart__button cart__quote-button" type="submit">GET A QUOTE</button><br>
+                    </form>
+                </div>
+                <div class="shopping-cart__checkout">
+                    <p class="checkout__subtotal">SUB TOTAL $900</p>
+                    <p class="checkout__grand-total">GRAND TOTAL <span class="slogan__style">$900</span></p>
+                    <svg class="checkout__line" width="275" height="1" viewBox="0 0 275 1" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path d="M275 0H0V1H275V0Z" fill="#E2E2E2" />
+                    </svg>
+                    <button class="checkout__button">PROCEED TO CHECKOUT</button>
+                </div>
+            </div>
+
+        </div>
+        </div>
+
+
+
+        <div class="cart-menu">
+
+        </div>
+        </div>
+        <div class="service">
+            <div class="container service__cards">
+                <div class="service__card">
+                    <div class="service__delivery">
+                        <div class="service__delivery-logo"><img src="img/delivery.svg" alt="delivery">
                         </div>
+                        <h5 class="service__name">Delivery</h5>
+                        <p class="service__text">Worldwide delivery on all. Authorit tively morph next-generation
+                            innov
+                            tion with extensive models.</p>
                     </div>
-                    <div class="service__card">
-                        <div class="servise__sales">
-                            <div class="service__sales-logo"><img src="img/sales.svg" alt="sales">
-                            </div>
-                            <h5 class="service__name">Sales & discounts</h5>
-                            <p class="service__text">Worldwide delivery on all. Authorit tively morph next-generation
-                                innov
-                                tion with extensive models.</p>
+                </div>
+                <div class="service__card">
+                    <div class="servise__sales">
+                        <div class="service__sales-logo"><img src="img/sales.svg" alt="sales">
                         </div>
+                        <h5 class="service__name">Sales & discounts</h5>
+                        <p class="service__text">Worldwide delivery on all. Authorit tively morph next-generation
+                            innov
+                            tion with extensive models.</p>
                     </div>
-                    <div class="service__card">
-                        <div class="service__quality">
-                            <div class="service__quality-logo"><img src="img/quality.svg" alt="">
-                            </div>
-                            <h5 class="service__name">Quality assurance</h5>
-                            <p class="service__text">Worldwide delivery on all. Authorit tively morph next-generation
-                                innov
-                                tion
-                                with extensive models.</p>
+                </div>
+                <div class="service__card">
+                    <div class="service__quality">
+                        <div class="service__quality-logo"><img src="img/quality.svg" alt="">
                         </div>
+                        <h5 class="service__name">Quality assurance</h5>
+                        <p class="service__text">Worldwide delivery on all. Authorit tively morph next-generation
+                            innov
+                            tion
+                            with extensive models.</p>
                     </div>
                 </div>
             </div>
-            <div class="subscribe">
-                <div class="subscribe__content container">
-                    <div class="subscribe__left">
-                        <img src="img/sub_photo.png" alt="photo" class="sub-photo">
-                        <q class="quote">Vestibulum quis porttitor dui! Quisque viverra nunc mi, a pulvinar purus
-                            condimentum</q>
-                    </div>
-                    <div class="subscribe__right">
-                        <h2 class="subscribe__heading">SUBSCRIBE</h2>
-                        <p class="subscribe__text">FOR OUR NEWLETTER AND PROMOTION</p>
-                        <form class="subscribe__form" action="#">
-                            <input class="sub_input" type="email" placeholder="Enter Your Email">
-                            <input class=" subscribe__button" type="submit" value="Subscribe">
-                        </form>
-                    </div>
+        </div>
+        <div class="subscribe">
+            <div class="subscribe__content container">
+                <div class="subscribe__left">
+                    <img src="img/sub_photo.png" alt="photo" class="sub-photo">
+                    <q class="quote">Vestibulum quis porttitor dui! Quisque viverra nunc mi, a pulvinar purus
+                        condimentum</q>
+                </div>
+                <div class="subscribe__right">
+                    <h2 class="subscribe__heading">SUBSCRIBE</h2>
+                    <p class="subscribe__text">FOR OUR NEWLETTER AND PROMOTION</p>
+                    <form class="subscribe__form" action="#">
+                        <input class="sub_input" type="email" placeholder="Enter Your Email">
+                        <input class=" subscribe__button" type="submit" value="Subscribe">
+                    </form>
                 </div>
             </div>
+        </div>
     </main>
     <footer class="footer">
         <div class="footer__content container">

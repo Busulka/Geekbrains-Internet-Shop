@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Index</title>
+    <title>Cart</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/2436301015.js" crossorigin="anonymous"></script>
 </head>
@@ -58,126 +58,79 @@
             </nav>
         </nav>
     </header>
-    <main class="main">
-        <div class="top">
-            <div class="start">
-                <div class="photo"> <img src="img/photo.png" alt="photo">
-                </div>
-                <div class="slogan">
-                    <h1 class="slogan__first">THE BRAND</h1>
-                    <h2 class="slogan__second">OF LUXURIOUS <span class="slogan__style">FASHION</span></h2>
-                </div>
+    <main>
+        <div class="main__top">
+            <div class="container main__top">
+                <h2 class="main__heading">SHOPPING CART</h2>
             </div>
         </div>
+        <div class="container shopping-cart__container">
+            <div class="shopping-cart__left">
+                <div class="shopping-cart">
+                    <div class="shopping-cart__product-card">
+                        <img src="img/cart-product_1.png" alt="product">
+                        <div class="shopping-cart__product-description">
+                            <h4 class="product-description__name">MANGO PEOPLE T-SHIRT</h4>
+                            <p class="product-description">Price: <span class="slogan__style">$300</span></p>
+                            <p class="product-description">Color: Red</p>
+                            <p class="product-description">Size: Xl</p>
+                            <div class="product-description__quantity">
+                                <p class="product-description">Quantity:</p>
+                                <p class="quantity__number">2</p>
+                            </div>
+                        </div>
+                        <img class="shopping-cart__product-cross cross" src="img/cross.svg" alt="cross">
+                    </div>
+                    <div class="shopping-cart__product-card">
+                        <img src="img/cart-product_2.png" alt="product">
+                        <div class="shopping-cart__product-description">
+                            <h4 class="product-description__name">MANGO PEOPLE T-SHIRT</h4>
+                            <p class="product-description">Price: <span class="slogan__style">$300</span></p>
+                            <p class="product-description">Color: Red</p>
+                            <p class="product-description">Size: Xl</p>
+                            <div class="product-description__quantity">
+                                <p class="product-description">Quantity:</p>
+                                <p class="quantity__number">1</p>
+                            </div>
+                        </div>
+                        <img class="shopping-cart__product-cross cross" src="img/cross.svg" alt="cross">
+                    </div>
+                </div>
+                <div class="shopping-cart__buttons">
+                    <button class="shopping-cart__button">CLEAR SHOPPING CART</button>
+                    <a href="catalog.html" class="shopping-cart__button">CONTINUE SHOPPING</a>
+                </div>
+            </div>
+            <div class="shopping-cart__right">
+                <div class="shopping-cart__address">
+                    <form class="address-form">
+                        <h4 class="address-form__heading">SHIPPING ADDRESS</h4>
+                        <input class="address-input" type="text" placeholder="Bangladesh"><br>
+                        <input class="address-input" type="text" placeholder="State"><br>
+                        <input class="address-input" type="text" placeholder="Postcode / Zip"><br>
+                        <button class="shopping-cart__button cart__quote-button" type="submit">GET A QUOTE</button><br>
+                    </form>
+                </div>
+                <div class="shopping-cart__checkout">
+                    <p class="checkout__subtotal">SUB TOTAL $900</p>
+                    <p class="checkout__grand-total">GRAND TOTAL <span class="slogan__style">$900</span></p>
+                    <svg class="checkout__line" width="275" height="1" viewBox="0 0 275 1" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path d="M275 0H0V1H275V0Z" fill="#E2E2E2" />
+                    </svg>
+                    <button class="checkout__button">PROCEED TO CHECKOUT</button>
+                </div>
+            </div>
 
-        <div class="main__catalog container">
-            <div class="products">
-                <div class="products__card women">
-                    <p class="card__description">30% OFF</p>
-                    <p class="card__description-pink">WOMEN</p>
-                </div>
-                <div class="products__card men">
-                    <p class="card__description">HOT DEAL</p>
-                    <p class="card__description-pink">FOR MEN</p>
-                </div>
-                <div class="products__card kids">
-                    <p class="card__description">NEW ARRIVALS</p>
-                    <p class="card__description-pink">FOR KIDS</p>
-                </div>
-            </div>
-            <div class="products__card accessories">
-                <p class="card__description">LUXURIOUS & TRENDY</p>
-                <p class="card__description-pink">ACCESORIES</p>
-            </div>
         </div>
-        <div class="featured container">
-            <h3 class="featured__heading">Featured Items</h3>
-            <p class="featured__text">Shop for items based on what we featured this week</p>
-            <div class="featured__cards">
-                <div class="featured__item">
-                    <video src="video/kitty.mp4" height="420" autoplay="autoplay" loop="loop" muted="muted">
-                    </video>
-                    <h4 class="item__name item__text">ELLERY X M'O CAPSULE</h4>
-                    <p class="item__description item__text">Known for her sculptural takes on traditional tailoring,
-                        Australian
-                        arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
-                    <p class="item__price item__text">$52.00</p>
-                </div>
-                <div class="featured__item">
-                    <img class="item__image" src="img/item_2.png" alt="item">
-                    <div class="featured__item-hover">
-                        <div class="add-to-cart">
-                            <img src="img/add-to-cart.svg" alt="Cart">
-                            <p class="add-to-cart__img">Add To Cart</p>
-                        </div>
-                    </div>
-                    <h4 class="item__name item__text">ELLERY X M'O CAPSULE</h4>
-                    <p class="item__description item__text">Known for her sculptural takes on traditional tailoring,
-                        Australian
-                        arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
-                    <p class="item__price item__text">$52.00</p>
-                </div>
-                <div class="featured__item">
-                    <img class="item__image" src="img/item_3.png" alt="item">
-                    <div class="featured__item-hover">
-                        <div class="add-to-cart">
-                            <img src="img/add-to-cart.svg" alt="Cart">
-                            <p class="add-to-cart__img">Add To Cart</p>
-                        </div>
-                    </div>
-                    <h4 class="item__name item__text">ELLERY X M'O CAPSULE</h4>
-                    <p class="item__description item__text">Known for her sculptural takes on traditional tailoring,
-                        Australian
-                        arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
-                    <p class="item__price item__text">$52.00</p>
-                </div>
-                <div class="featured__item">
-                    <img class="item__image" src="img/item_4.png" alt="item">
-                    <div class="featured__item-hover">
-                        <div class="add-to-cart">
-                            <img src="img/add-to-cart.svg" alt="Cart">
-                            <p class="add-to-cart__img">Add To Cart</p>
-                        </div>
-                    </div>
-                    <h4 class="item__name item__text">ELLERY X M'O CAPSULE</h4>
-                    <p class="item__description item__text">Known for her sculptural takes on traditional tailoring,
-                        Australian
-                        arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
-                    <p class="item__price item__text">$52.00</p>
-                </div>
-                <div class="featured__item">
-                    <img class="item__image" src="img/item_5.png" alt="item">
-                    <div class="featured__item-hover">
-                        <div class="add-to-cart">
-                            <img src="img/add-to-cart.svg" alt="Cart">
-                            <p class="add-to-cart__img">Add To Cart</p>
-                        </div>
-                    </div>
-                    <h4 class="item__name item__text">ELLERY X M'O CAPSULE</h4>
-                    <p class="item__description item__text">Known for her sculptural takes on traditional tailoring,
-                        Australian
-                        arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
-                    <p class="item__price item__text">$52.00</p>
-                </div>
-                <div class="featured__item">
-                    <img class="item__image" src="img/item_6.png" alt="item">
-                    <div class="featured__item-hover">
-                        <div class="add-to-cart">
-                            <img src="img/add-to-cart.svg" alt="Cart">
-                            <p class="add-to-cart__img">Add To Cart</p>
-                        </div>
-                    </div>
-                    <h4 class="item__name item__text">ELLERY X M'O CAPSULE</h4>
-                    <p class="item__description item__text">Known for her sculptural takes on traditional tailoring,
-                        Australian
-                        arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
-                    <p class="item__price item__text">$52.00</p>
-                </div>
-
-            </div>
-            <a href="catalog.html" class="featured__button">Browse All Products</a>
         </div>
 
+
+
+        <div class="cart-menu">
+
+        </div>
+        </div>
         <div class="service">
             <div class="container service__cards">
                 <div class="service__card">
@@ -229,11 +182,6 @@
                     </form>
                 </div>
             </div>
-        </div>
-
-
-
-        </div>
         </div>
     </main>
     <footer class="footer">

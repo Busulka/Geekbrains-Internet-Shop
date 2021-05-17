@@ -79,6 +79,7 @@ body {
   position: absolute;
   top: 25px;
   left: 169px;
+  z-index: 11;
 }
 
 .cross {
@@ -1047,6 +1048,7 @@ body {
 .shopping-cart__button:hover {
   color: #fff;
   background-color: #F16D7F;
+  border: 1px solid #F16D7F;
 }
 
 .shopping-cart__right {
@@ -1061,13 +1063,13 @@ body {
   color: #222222;
 }
 
-.address-input {
+.input-text {
   margin: 10px 0;
   padding-left: 17px;
   width: 343px;
   height: 45px;
   opacity: 0.6;
-  border: 1px solid #676565;
+  border: 1px solid #A4A4A4;
   font-weight: 300;
   font-size: 13px;
   line-height: 16px;
@@ -1128,12 +1130,100 @@ body {
   font-size: 16px;
   line-height: 19px;
   text-align: center;
-  border: none;
+  border: 1px solid #F16D7F;
 }
 
 .checkout__button:hover {
   color: #F16D7F;
   background-color: #fff;
   border: 1px solid #F16D7F;
+}
+
+.checkout__button:hover .reg-form__arrow-icon {
+  fill: #F16D7F;
+}
+
+.main__reg-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.main__reg-left {
+  margin-top: 64px;
+  width: 360px;
+}
+
+.reg-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.reg-form__name {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 19px;
+  color: #222222;
+  margin-top: 0;
+}
+
+.reg-form__radio {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 24px;
+}
+
+.radio-text {
+  padding-right: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-weight: 300;
+  font-size: 11px;
+  line-height: 13px;
+  color: #000000;
+}
+
+.reg-form__text {
+  font-weight: 300;
+  font-size: 13px;
+  line-height: 16px;
+  color: #B1B1B1;
+  margin: 0;
+}
+
+.reg-form__button {
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  margin: 39px 0 96px 0;
+}
+
+.main__reg-right {
+  margin: 43px 0 0 128px;
+  width: 650px;
+}
+
+.reg-right__text {
+  padding: 0;
+  list-style-position: inside;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 29px;
+  color: #000000;
+  margin: 21px 0;
+  list-style: none;
+}
+
+.reg-check-icon {
+  margin-right: 23px;
 }
 /*# sourceMappingURL=style.css.map */

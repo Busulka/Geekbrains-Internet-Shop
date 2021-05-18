@@ -3,6 +3,24 @@ body {
   font-family: 'Lato', sans-serif;
 }
 
+@-webkit-keyframes flowers {
+  0% {
+    background-position-y: 600px, 1200px, 500px, 700px, 400px, 1000px, 700px;
+  }
+  100% {
+    background-position-y: -1000px, -400px, -1800px, -500px, -1500px, -500px, -1100px;
+  }
+}
+
+@keyframes flowers {
+  0% {
+    background-position-y: 600px, 1200px, 500px, 700px, 400px, 1000px, 700px;
+  }
+  100% {
+    background-position-y: -1000px, -400px, -1800px, -500px, -1500px, -500px, -1100px;
+  }
+}
+
 @font-face {
   font-family: 'Lato';
   font-style: normal;
@@ -151,6 +169,14 @@ body {
   width: 100%;
   height: 764px;
   background: #f1e4e6;
+  background-image: url(img/flower_1), url(img/flower_2), url(img/flower_3), url(img/flower_4), url(img/flower_5), url(img/flower_6), url(img/flower_7);
+  background-image: url(img/flower_1.svg), url(img/flower_2.svg), url(img/flower_3.svg), url(img/flower_4.svg), url(img/flower_5.svg), url(img/flower_6.svg), url(img/flower_7.svg);
+  background-repeat: no-repeat;
+  background-size: 60px, 40px, 70px, 50px, 80px, 70px, 50px;
+  background-position-x: 1100px, 300px, 0px, 1450px, 900px, 100px, 600px;
+  background-position-y: 0;
+  -webkit-animation: flowers 20s linear infinite;
+          animation: flowers 20s linear infinite;
 }
 
 .photo {
@@ -241,7 +267,7 @@ body {
           justify-content: center;
 }
 
-.card__description {
+.products__card .card__description {
   font-size: 16px;
   line-height: 19px;
   color: #FFFFFF;
@@ -617,6 +643,14 @@ body {
   width: 100%;
   height: 148px;
   background: #F8F3F4;
+  background-image: url(img/flower_1), url(img/flower_2), url(img/flower_3), url(img/flower_4), url(img/flower_5), url(img/flower_6), url(img/flower_7);
+  background-image: url(img/flower_1.svg), url(img/flower_2.svg), url(img/flower_3.svg), url(img/flower_4.svg), url(img/flower_5.svg), url(img/flower_6.svg), url(img/flower_7.svg);
+  background-repeat: no-repeat;
+  background-size: 60px, 40px, 70px, 50px, 80px, 70px, 50px;
+  background-position-x: 1100px, 300px, 0px, 1450px, 900px, 100px, 600px;
+  background-position-y: 0;
+  -webkit-animation: flowers 20s linear infinite;
+          animation: flowers 20s linear infinite;
 }
 
 .main__heading {
@@ -1141,6 +1175,8 @@ body {
 
 .checkout__button:hover .reg-form__arrow-icon {
   fill: #F16D7F;
+  -webkit-transform: rotate(-360deg);
+          transform: rotate(-360deg);
 }
 
 .main__reg-form {
@@ -1205,6 +1241,15 @@ body {
   -ms-flex-item-align: start;
       align-self: flex-start;
   margin: 39px 0 96px 0;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.reg-form__button:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  -webkit-box-shadow: 0px 0px 22px 12px rgba(34, 60, 80, 0.27);
+          box-shadow: 0px 0px 22px 12px rgba(34, 60, 80, 0.27);
 }
 
 .main__reg-right {
@@ -1225,5 +1270,12 @@ body {
 
 .reg-check-icon {
   margin-right: 23px;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.reg-check-icon:hover {
+  -webkit-transform: rotate(-360deg);
+          transform: rotate(-360deg);
 }
 /*# sourceMappingURL=style.css.map */

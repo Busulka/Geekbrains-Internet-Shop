@@ -12,7 +12,19 @@ $main-style-color: #F16D7F
 @mixin container()
     max-width: 1140px
     margin: 0 auto
-
+@mixin animation ()
+    background-image: url(img/flower_1), url(img/flower_2), url(img/flower_3), url(img/flower_4), url(img/flower_5), url(img/flower_6), url(img/flower_7)
+    background-image: url(img/flower_1.svg), url(img/flower_2.svg), url(img/flower_3.svg), url(img/flower_4.svg), url(img/flower_5.svg), url(img/flower_6.svg), url(img/flower_7.svg)
+    background-repeat: no-repeat
+    background-size: 60px, 40px, 70px, 50px, 80px, 70px, 50px
+    background-position-x: 1100px, 300px, 0px, 1450px, 900px, 100px, 600px
+    background-position-y: 0
+    animation: flowers 20s linear infinite
+@keyframes flowers
+    0%
+        background-position-y: 600px, 1200px, 500px, 700px, 400px, 1000px, 700px
+    100%
+        background-position-y: -1000px, -400px, -1800px, -500px, -1500px, -500px, -1100px
 @font-face
     font-family: 'Lato'
     font-style: normal
@@ -97,6 +109,7 @@ $main-style-color: #F16D7F
     width: 100%
     height: 764px
     background: #f1e4e6
+    @include animation ()
 .photo
     height: 764px
 .slogan
@@ -139,13 +152,13 @@ $main-style-color: #F16D7F
     flex-direction: column
     align-items: center
     justify-content: center
-.card__description
-    font-size: 16px
-    line-height: 19px
-    color: #FFFFFF
-    font-weight: 400
-    margin: 0
-    padding: 0
+    .card__description
+        font-size: 16px
+        line-height: 19px
+        color: #FFFFFF
+        font-weight: 400
+        margin: 0
+        padding: 0
 .card__description-pink
     color: $main-style-color
     font-weight: 700
@@ -356,6 +369,8 @@ $main-style-color: #F16D7F
     width: 100%
     height: 148px
     background: #F8F3F4
+    @include animation ()
+
 .main__heading
     color: $main-style-color
     font-weight: 400
@@ -669,6 +684,7 @@ $main-style-color: #F16D7F
         border: 1px solid $main-style-color
     &:hover .reg-form__arrow-icon
         fill: $main-style-color
+        transform: rotate(-360deg)
 .main__reg-form
     display: flex
 .main__reg-left
@@ -703,6 +719,11 @@ $main-style-color: #F16D7F
 .reg-form__button
     align-self: flex-start
     margin: 39px 0 96px 0
+    transition: .5s
+    &:hover
+        transform: scale(1.2)
+        box-shadow: 0px 0px 22px 12px rgba(34, 60, 80, 0.27)
+
 .main__reg-right
     margin: 43px 0 0 128px
     width: 650px
@@ -717,3 +738,6 @@ $main-style-color: #F16D7F
     list-style: none
 .reg-check-icon
     margin-right: 23px
+    transition: .5s
+    &:hover
+        transform: rotate(-360deg)

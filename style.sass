@@ -60,6 +60,7 @@ $main-style-color: #F16D7F
     margin-right: 33px
 .top
     display: flex
+    background: #f1e4e6
 .burger__side
     display: none
     position: absolute
@@ -111,26 +112,31 @@ $main-style-color: #F16D7F
 .start
     display: flex
     justify-content: center
+    align-items: center
     width: 100%
-    height: 764px
-    background: #f1e4e6
+    max-height: 764px
     @include animation ()
 .photo
-    height: 764px
+    display: flex
+    flex-wrap: wrap
+    height: auto
+.main-photo
+    width: 100%
+    height: auto
 .slogan
     display: flex
     flex-direction: column
+    width: 377px
     padding: 0
-    margin: 290px 0 0 0
     height: 92px
     border-left: 12px solid $main-style-color
 .slogan__first
     font-weight: 900
-    font-size: 48px
+    font-size: 44px
     line-height: 58px
 .slogan__second
     font-weight: 700
-    font-size: 32px
+    font-size: 30px
     line-height: 38px
 .slogan__first,  .slogan__second
     margin: 0
@@ -151,8 +157,9 @@ $main-style-color: #F16D7F
     justify-content: space-between
 .products__card
     background-repeat: no-repeat
+    background-position: top
+    width: 30%
     height: 260px
-    width: 360px
     display: flex
     flex-direction: column
     align-items: center
@@ -746,3 +753,49 @@ $main-style-color: #F16D7F
     transition: .5s
     &:hover
         transform: rotate(-360deg)
+@media ( max-width: 768px )
+    .slogan
+        width: 283px
+        border-left: 12px solid #F16D7F
+    .slogan__first
+        font-size: 24px
+    .slogan__second
+        font-size: 18px
+    .products__card
+        height: 167px
+    .accessories
+        height: 116px
+        width: 100%
+        margin: 16px 0 0 0
+    .service__cards
+        flex-direction: column
+        height: 610px
+    .subscribe
+        height: 693px
+    .subscribe__content
+        padding-top: 50px
+        flex-direction: column
+    .subscribe__heading
+        padding-top: 46px
+@media ( max-width: 376px  )
+    .main-photo
+        display: none
+    .top
+        height: 363px
+    .products
+        flex-direction: column
+        align-items: center
+    .products__card
+        width: 90%
+        height: 247px
+        padding-bottom: 32px
+    .accessories
+        width: 100%
+        height: 111px
+    .footer
+        height: 143px
+    .footer__content
+        flex-direction: column
+    .footer__left
+        order: 1
+        padding-top: 40px

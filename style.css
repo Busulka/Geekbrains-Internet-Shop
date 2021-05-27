@@ -241,7 +241,7 @@ body {
 
 .container {
   max-width: 1140px;
-  margin: 0 auto;
+  margin: 0 5px;
 }
 
 .main__catalog {
@@ -1301,7 +1301,7 @@ body {
           transform: rotate(-360deg);
 }
 
-@media (max-width: 768px) {
+@media (max-width: 855px) {
   .slogan {
     width: 283px;
     border-left: 12px solid #F16D7F;
@@ -1342,7 +1342,7 @@ body {
   }
 }
 
-@media (max-width: 376px) {
+@media (max-width: 730px) {
   .main-photo {
     display: none;
   }
@@ -1366,6 +1366,11 @@ body {
   .accessories {
     width: 100%;
     height: 111px;
+  }
+  .featured__cards {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   .footer {
     height: 143px;

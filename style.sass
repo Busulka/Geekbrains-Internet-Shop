@@ -11,7 +11,7 @@ $main-style-color: #F16D7F
     line-height: 17px
 @mixin container()
     max-width: 1140px
-    margin: 0 auto
+    margin: 0 5px
 @mixin animation ()
     background-image: url(img/flower_1), url(img/flower_2), url(img/flower_3), url(img/flower_4), url(img/flower_5), url(img/flower_6), url(img/flower_7)
     background-image: url(img/flower_1.svg), url(img/flower_2.svg), url(img/flower_3.svg), url(img/flower_4.svg), url(img/flower_5.svg), url(img/flower_6.svg), url(img/flower_7.svg)
@@ -753,7 +753,7 @@ $main-style-color: #F16D7F
     transition: .5s
     &:hover
         transform: rotate(-360deg)
-@media ( max-width: 768px )
+@media ( max-width: 855px )
     .slogan
         width: 283px
         border-left: 12px solid #F16D7F
@@ -777,7 +777,7 @@ $main-style-color: #F16D7F
         flex-direction: column
     .subscribe__heading
         padding-top: 46px
-@media ( max-width: 376px  )
+@media ( max-width: 730px  )
     .main-photo
         display: none
     .top
@@ -792,6 +792,8 @@ $main-style-color: #F16D7F
     .accessories
         width: 100%
         height: 111px
+    .featured__cards
+        justify-content: center
     .footer
         height: 143px
     .footer__content

@@ -89,6 +89,46 @@ $main-style-color: #F16D7F
     font-weight: bold
     color: #000
     @include standard-font()
+.cart__iconWrap
+    position: relative
+    cursor: pointer
+.cart__iconWrap span
+    display: inline-block
+    width: 19px
+    height: 19px
+    color: white
+    background: #f16d7f
+    border-radius: 50%
+    position: absolute
+    text-align: center
+    right: -8px
+    top: -5px
+    font-size: 12px
+    line-height: 19px
+.basket
+    position: absolute
+    z-index: 3
+    right: 0
+    top: 37px
+    background: white
+    padding: 10px
+    border: 1px solid #ebebeb
+    border-radius: 3px
+    font-size: 14px
+.basketRow
+    display: grid
+    grid-template-columns: repeat(4, 1fr)
+    gap: 10px
+    margin-bottom: 10px
+    border-bottom: 1px solid #ebebeb
+    padding-bottom: 10px
+.basketHeader
+    font-weight: bold
+.basketTotal
+    font-weight: bold
+    text-align:
+.hidden
+    display: none
 .menu-list
     @include standard-font()
     color: $main-style-color
@@ -234,6 +274,9 @@ $main-style-color: #F16D7F
     border: 1px solid white
     width: 138px
     margin: 188px 110px
+    cursor: pointer
+    align-items: center
+    background: none
 .add-to-cart__img
     @include standard-font()
     color: #FFFFFF
